@@ -1,0 +1,33 @@
+###服务端口号
+server:
+  port: 8300
+spring:
+  application:
+    name: app-euerke-zuul
+###eureka 基本信息配置
+eureka:
+  instance:
+    ###注册到eurekaip地址
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+###########Swagger配置
+swagger:
+  base-package: com.mayi.edu.zuul  //需要写接口包名,而不是类的包名
+  title: SpringCloud2.0x构建的微服务电商项目
+
+### 配置网关反向代理
+zuul:
+  routes:
+    api-a:
+      ### 以/api-sms/访问转发到短信
+      path: /api-sms/**
+      serviceId: app-euerke-sms
+    api-b:
+      ### 以/api-sms/访问转发到会员服务上面去
+      path: /api-member/**
+      serviceId: app-euerke-member

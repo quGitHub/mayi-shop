@@ -17,6 +17,12 @@
             <artifactId>meite-shop-service-api-sms</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.meite.edu</groupId>
+            <artifactId>meite-shop-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,4 +1,5 @@
 package com.mayi.edu.member.impl;
+import com.mayi.edu.base.BaseApiService;
 import com.mayi.edu.member.MemberSmsService;
 import com.mayi.edu.member.fegin.MemberSmsFegin;
 import com.mayi.edu.sms.entity.SmsEntity;
@@ -15,8 +16,9 @@ public class MemberSmsServerImpl implements MemberSmsService {
 
 
     @GetMapping("/getSmsInfo")
-    public SmsEntity getMemberSmsInfo() {
-        SmsEntity smsInfo = memberSmsFegin.getSmsInfo();
+    public BaseApiService getMemberSmsInfo(String phone) {
+        BaseApiService smsInfo = memberSmsFegin.getSmsInfo(phone);
         return smsInfo;
     }
+
 }

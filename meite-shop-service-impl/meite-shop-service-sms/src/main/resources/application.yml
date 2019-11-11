@@ -4,7 +4,16 @@ server:
 spring:
   application:
     name: app-euerke-sms
-###eureka 基本信息配置
+  ###eureka 基本信息配置
+  redis:
+    host: 192.168.249.131
+    port: 6381
+    database: 0
+  datasource:
+    url: jdbc:mysql:///user?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
 eureka:
   instance:
     ###注册到eurekaip地址
@@ -14,6 +23,7 @@ eureka:
       defaultZone: http://localhost:8100/eureka/
     register-with-eureka: true
     fetch-registry: true
+
 
 ###########Swagger配置
 swagger:

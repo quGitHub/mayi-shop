@@ -16,11 +16,13 @@
         <option value="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-sms/pom.xml" />
         <option value="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/pom.xml" />
         <option value="$PROJECT_DIR$/meite-shop-service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/meite-shop-commom/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/meite-shop-common/pom.xml" />
+        <option value="$PROJECT_DIR$/meiteshopcommom/pom.xml" />
       </set>
     </option>
   </component>

@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="meite-shop-api-dto" />
+        <module name="meite-shop-api-entitys" />
         <module name="meite-shop-basics-springcloud-eureka" />
         <module name="meite-shop-basics-springcloud-zuul" />
+        <module name="meite-shop-commom" />
         <module name="meite-shop-common" />
         <module name="meite-shop-portal" />
         <module name="meite-shop-service-api-member" />
@@ -22,15 +24,18 @@
       <module name="mayi-shop (1)" target="1.5" />
       <module name="meite-shop-common" target="1.8" />
       <module name="meiteshopbasics" target="1.8" />
+      <module name="meiteshopcommom" target="1.8" />
       <module name="meiteshopcommon" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="meite-shop-api-dto" options="-parameters" />
+      <module name="meite-shop-api-entitys" options="-parameters" />
       <module name="meite-shop-basics" options="-parameters" />
       <module name="meite-shop-basics-springcloud-eureka" options="-parameters" />
       <module name="meite-shop-basics-springcloud-zuul" options="-parameters" />
+      <module name="meite-shop-commom" options="-parameters" />
       <module name="meite-shop-common" options="-parameters" />
       <module name="meite-shop-portal" options="-parameters" />
       <module name="meite-shop-service-api" options="-parameters" />
@@ -41,6 +46,7 @@
       <module name="meite-shop-service-member" options="-parameters" />
       <module name="meite-shop-service-sms" options="-parameters" />
       <module name="meiteshopbasics" options="-parameters" />
+      <module name="meiteshopcommom" options="-parameters" />
       <module name="meiteshopcommon" options="-parameters" />
     </option>
   </component>

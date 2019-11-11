@@ -8,6 +8,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.meite.edu</groupId>
+            <artifactId>meite-shop-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.meite.edu</groupId>
     <artifactId>meite-shop-service-api-sms</artifactId>

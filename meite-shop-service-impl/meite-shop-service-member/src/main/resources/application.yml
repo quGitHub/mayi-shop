@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: app-euerke-member
+  datasource:
+    url: jdbc:mysql://user?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
 ###eureka 基本信息配置
 eureka:
   instance:
@@ -19,3 +24,5 @@ eureka:
 swagger:
   base-package: com.mayi.edu.member  //需要写接口包名,而不是类的包名
   title: SpringCloud2.0x构建的微服务电商项目
+mybatis:
+  config-locations: classpath*:mybatis/mybatis-config.xml

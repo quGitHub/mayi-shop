@@ -1,5 +1,6 @@
 package com.mayi.edu.sms.service;
 
+import com.mayi.edu.base.BaseApiService;
 import com.mayi.edu.sms.entity.SmsEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -15,5 +16,5 @@ public interface SmsAppService {
      */
     @ApiOperation(value = "短信发送接口")
     @GetMapping("/getSmsInfo")
-    public SmsEntity getSmsInfo();
+    public BaseApiService getSmsInfo(String phone);
 }

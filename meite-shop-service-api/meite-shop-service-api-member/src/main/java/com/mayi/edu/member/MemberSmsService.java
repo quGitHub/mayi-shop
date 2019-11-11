@@ -1,5 +1,6 @@
 package com.mayi.edu.member;
 
+import com.mayi.edu.base.BaseApiService;
 import com.mayi.edu.sms.entity.SmsEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -12,5 +13,5 @@ public interface MemberSmsService {
      * @return
      */
     @ApiOperation(value="会员调用短信服务接口")
-    public SmsEntity getMemberSmsInfo();
+    public BaseApiService getMemberSmsInfo(String phone);
 }
